@@ -4,11 +4,10 @@ output: pdf_document
 ---
 
 
-# your name
-Address  
-Tel  
-Email  
-web address  
+# Nicholas Powell
+374 W Tanner Dr, Fayetteville, AR | 72701
+(501) 551-6887
+nmp002@uark.edu
 
 # Experience  
 ## Company name (make sure to put two spaces at the end of each line where you want to create a line break)
