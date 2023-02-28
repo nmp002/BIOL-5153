@@ -1,45 +1,45 @@
----
-title: ''
-output: pdf_document
----
-
-
 # Nicholas Powell
-374 W Tanner Dr, Fayetteville, AR | 72701
-(501) 551-6887
-nmp002@uark.edu
+374 W Tanner Dr, Fayetteville, AR | 72701  
+(501) 551-6887  
+nmp002@uark.edu  
 
 # Experience  
-## Company name (make sure to put two spaces at the end of each line where you want to create a line break)
-* Activity description
-    + Sub-bullet level description (put 4 spaces before inserting the "+")
+## Research Assistant, Laboratory for Functional Optical Imaging    
+* Optimizing a lookup table (LUT) based model used to extract optical properties for tumorous tissue  
+* Processed and analyzed data from over 1,000 diffuse reflectance spectra obtained from mouse tissue
+
+## Manufacturing Associate, NOWDiagnostics  
+* Trained over 50% of manufacturing team in setup and operation of production equipment  
+* Inspected products and equipment to main quality and efficiency  
+
+## Research Assistant, Regenerative Biomaterials Laboratory  
+* Collected and analyzed data used to design cell-based therapies for shoulder cuff injuries  
+* Utilized cryosectioning, tissue staining, cell culturing, and microscopy techniques  
 
 # Education
 
-## Degree, school name, years  
-* *Fields* Fields or major
-* *Thesis* Thesis or dissertation
+## B.S. in Biomedical Engineering with a Minor in Spanis  
+* University of Arkansas, 2018 - 2022  
+
+## PhD in Biomedical Engineering  
+* University of Arkansas, Spring 2022 - Present
  
-# Selected Publications
+# Engineering Projects  
 
-*Books*  
+## Vicon Motion Capture Project, Summer 2019  
+* Utilized motion capture hardware and software to analyze biomechanical movement to better understand the effect of major orthopedic surgeries on sports biomechanics  
 
-* Books   
+## 3D-Printed Prosthesis Project  
+* 3D printed a functional prosthetic hand for a recipient born with a hand deformity
+* Implemented 3D scanning, modeling, and printing to deliver a more customized prosthesis  
 
-*Articles and Shorter-Length Publications* 
+# Certifications and Honors  
 
-* Articles  
+## Stephens Award, Spring 2018
+* Awarded to 8 of the top 5% of students in the Little Rock area  
 
-
-# Programming languages/packages
-* Markdown and others  
-
-# Media experience
-Extensive experience in speaking with the print and electronic media...
-
-
- 
-
+## Chancellor's List, University of Arkansas (Fall 2018 - Fall 2021)  
+* Recognizes undergraduate students who achieve a 4.0 GPA for the term
 
 
                                      
