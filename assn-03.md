@@ -10,17 +10,17 @@
 
 ---
 
-1.
+**1. Use rsync to upload the mt_genomes directory onto the AHPCC in /storage/username:**
 ```
 rsync -av mt_genomes nmp002@hpc-portal2.hpc.uark.edu/storage/nmp002
 ```
 
-2. 
+**2. Use scp or rsync to upload ‘unknown.fa’, which contains an unknown sequence:** 
 ```
 scp unknown.fa nmp002@hpc-portal2.hpc.uark.edu:/storage/nmp002/mt_genomes
 ```
 
-3. 
+**3. Write a slurm script for the job:** 
 ```
 nano assn3.slurm
 ```
@@ -66,7 +66,7 @@ sbatch assn3.slurm	# upload the job
 stat | grep nmp002	# to see where I am in the queue
 ```
 
-4.
+**4. Use rsync to synchronize the remote mt_genomes and your local version of mt_genomes:**
 ```
 rsync -av nmp002@hpc-portal2.hpc.uark.edu:/storage/nmp002/mt_genomes/ .
 ```
