@@ -71,7 +71,9 @@ stat | grep nmp002	# to see where I am in the queue
 rsync -av nmp002@hpc-portal2.hpc.uark.edu:/storage/nmp002/mt_genomes/ .
 ```
 
-5. **Time for job to complete:** 3 seconds  
+**5. Answers:**
+  
+   **Time for job to complete:** 3 seconds  
    **Closest match in the database:** Cucurbita
 
 
