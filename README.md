@@ -5,11 +5,11 @@
 
 
 ## 1.) ***assn-03.md***  
-	- A step-by-by step process for creating a slurm script, uploading a job to the AHPCC cluster,
-	  and syncing the results to my local computer. 
+- A step-by-by step process for creating a slurm script, uploading a job to the AHPCC cluster,
+  and syncing the results to my local computer. 
 
 
 
 
 ## 2.) ***my_cv.md***
-	- A current version of my CV
+- A current version of my CV
