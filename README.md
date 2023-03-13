@@ -13,3 +13,6 @@
 
 ## 2.) ***my_cv.md***
 - A current version of my CV
+
+## 3.) ***hello_world.py***
+- My first python script on GitHub
