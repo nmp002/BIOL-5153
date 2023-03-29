@@ -19,9 +19,5 @@
 - Includes the following variables as command-line arguments that are parsed by the *argparse* module: 
   + *Positional:*
     job_name 
-  + *Optional:* 
-    queue 
-    nodes 
-    processors 
-    walltime
+  + *Optional:* queue, nodes, processors, walltime
 
