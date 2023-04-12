@@ -19,14 +19,38 @@ with open(args.gff) as x:
 
 	# loop over all the lines in the file
 	for line in x:
-		line.rstrip()
-		properties = line.split('\t')
-		feature_type = properties[2]
-		feature_start = int(properties[3])
-		feature_end = int(properties[4])
-		feature_length = feature_end - feature_start + 1
+
+		# skip blank lines
+		if not line.strip():
+			continue
 		
-		print(feature_type + '\t' + str(feature_length))
+		# if it's not a blank line, do this:
+		else:
+			# remove the linebreak (white space) from the end of the line
+			line.rstrip()
+
+			# split line on tab character
+			# this creates a list consisting of the line columns
+			columns 		= line.split('\t')
+
+			# give variable names to the columns
+			organism 		= columns[0]
+			source 			= columns[1]
+			feature_type 	= columns[2]
+			start 			= int(columns[3])
+			end 			= int(columns[4])
+			strand			= columns[6]
+			feature_attr	= columns[8]
+
+			# calculate the length of the feature and assign to column 5
+			columns[5]	= str(end - start + 1)
+			# give variable name to column 5
+			feature_length = columns[5]
+
+			new_line = '\t'.join(columns)
+			print(new_line)
+			
+			# print(feature_type + '\t' + str(feature_length))
 
 
 
