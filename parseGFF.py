@@ -19,10 +19,14 @@ with open(args.gff) as x:
 
 	# loop over all the lines in the file
 	for line in x:
-		print(line)
-
-
-
+		line.rstrip()
+		properties = line.split('\t')
+		feature_type = properties[2]
+		feature_start = int(properties[3])
+		feature_end = int(properties[4])
+		feature_length = feature_end - feature_start + 1
+		
+		print(feature_type + '\t' + str(feature_length))
 
 
 
