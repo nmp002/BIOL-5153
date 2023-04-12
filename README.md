@@ -21,3 +21,6 @@
     job_name 
   + *Optional:* queue, nodes, processors, walltime
 
+## 5.) ***parseGFF.py***
+- This python script parses through a given GFF file (input)
+- Prints the feature type and length (output)
