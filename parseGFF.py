@@ -2,6 +2,8 @@
 
 # import modules
 import argparse
+import csv
+
 
 # create an ArgumentParser object
 parser = argparse.ArgumentParser(description="This script parses a GFF file")
@@ -15,42 +17,40 @@ parser.add_argument("fasta", help="Name of the FASTA file to parse", type=str)
 args = parser.parse_args()
 
 # open the GFF file
-with open(args.gff) as x:
+with open(args.gff) as gff_file:
+
+	# create a csv reader object
+	reader = csv.reader(gff_file,delimiter='\t')
 
 	# loop over all the lines in the file
-	for line in x:
+	for line in reader:
 
 		# skip blank lines
-		if not line.strip():
+		if not line:
 			continue
 		
 		# if it's not a blank line, do this:
 		else:
-			# remove the linebreak (white space) from the end of the line
-			line.rstrip()
-
-			# split line on tab character
-			# this creates a list consisting of the line columns
-			columns 		= line.split('\t')
 
 			# give variable names to the columns
-			organism 		= columns[0]
-			source 			= columns[1]
-			feature_type 	= columns[2]
-			start 			= int(columns[3])
-			end 			= int(columns[4])
-			strand			= columns[6]
-			feature_attr	= columns[8]
+			organism 		= line[0]
+			source 			= line[1]
+			feature_type 	= line[2]
+			start 			= int(line[3])
+			end 			= int(line[4])
+			strand			= line[6]
+			feature_attr	= line[8]
 
 			# calculate the length of the feature and assign to column 5
-			columns[5]	= str(end - start + 1)
+			line[5]	= str(end - start + 1)
 			# give variable name to column 5
-			feature_length = columns[5]
+			feature_length = line[5]
 
-			new_line = '\t'.join(columns)
+			# join the list into a variable called new_line and print to output
+			new_line = '\t'.join(line)
 			print(new_line)
 			
-			# print(feature_type + '\t' + str(feature_length))
+			# # print(feature_type + '\t' + str(feature_length))
 
 
 
